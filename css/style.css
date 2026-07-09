@@ -1,0 +1,310 @@
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+/*VARIABLES*/
+/*azulmarino: #2c3340; 
+azul acero#4F6F8C;
+crema #D9B391;
+leche #F2D8C2;
+cafe#735340; */
+
+
+/*h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}*/
+
+
+/*mixins*/
+
+
+
+body{
+  font-family: "Inter", sans-serif; 
+  background-color: #2C3340;
+  color: #F2D8C2;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+  background-color:#2C3340;
+  min-height: 40vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  position: relative;
+}
+
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #F2D8C2;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: center
+}
+
+
+
+.secondtitle{
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #D9B391;
+  letter-spacing: 2px;
+  padding: 10px;
+  text-align: center
+}
+
+.eslogan{
+  font-family: "DM Serif Display", serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: #D9B391;
+  letter-spacing: 2px; 
+  
+}
+
+.icono_moka img{
+  top: 10px;
+  max-width: 20%;
+  max-height: 20%;
+  margin-top: 10px;
+  border-radius: 50%;
+  position: static;
+
+  transition: transform 1.5s ease; 
+
+}
+
+.icono_moka img:hover{
+  transform: rotate(360deg);
+}
+
+.navbar {
+  background-color: #4F6F8C;
+  width: 100%;
+  margin-top: 10px;
+  font-family: "DM Serif Display", serif;
+  position: sticky;
+  border-bottom: 2px solid #735340;
+  height: auto;
+  display: flex;
+  padding: 20px ;
+  justify-content: center;
+
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px ;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar ul li a{
+  color: #F2D8C2; 
+  text-decoration: none;
+}
+.navbar ul li a:hover{
+  color: #D9B391; 
+  transition: .25s;
+}
+
+
+
+
+.wsp img {
+  /*position: sticky;
+  justify-content: end;
+  border-radius: 50%;*/
+
+  bottom: 10px;
+  max-width: 10%;
+  max-height: 10%;
+  border-radius: 50%;
+  position: fixed;
+  right: 5px;
+  height: auto;
+  width: auto;
+
+}
+
+.wsp img:hover{
+
+  cursor: pointer;  
+}
+
+/* FIN HEADER*/
+
+/*MAIN*/
+
+.contenedor-novedades{
+  background-color:#4F6F8C;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+  justify-items: center;
+
+}
+
+.box-novedades {
+  border: 1px solid black;
+
+  border-radius: 8px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.contenedor-cards{
+
+}
+
+.contenedor-cards h2{
+color: #F2D8C2;
+text-align: center;
+gap: 10px;
+padding: 10px;
+}
+.contenedor-cards h3{
+  color:#D9B391;
+  text-align: center;
+  gap: 0;
+  padding: 0;
+}
+.contenedor-cards p{
+  background-color: #D9B391;
+  color: #735340;
+
+}
+
+.cards{
+  background-color: #D9B391;
+  width: auto ;
+  height:auto;
+  margin: 0px;
+  overflow: hidden;
+  gap: 10px;
+  display: flex;
+  justify-content: center ;
+  
+
+
+
+
+}
+
+.cards img{
+  display: block;
+  /* max 30vh maxheight 50vh*/
+  max-width: auto;
+  max-height: 50vh;
+  border-radius: 25px;
+  padding: 10px; 
+
+}
+
+
+/*.carousel-item img{
+  display: block;
+  max-width: 50vh;
+  max-height: 50vh;
+  border-radius: 25px;
+  padding: 10px;
+}*/
+
+.ajustar-imagen {
+  height: 50vh;
+  object-fit: cover;
+}
+
+/*---FOOTER-----*/
+
+footer{
+background-color: #2C3340;
+color: #F2D8C2;
+}
+
+.contenedor-footer{
+border-top: 2px solid #735340;
+padding: 20px;
+display: flex;
+gap: 20px;
+justify-content: space-around;
+}
+
+
+.lista-footer {
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  gap: 4px;
+
+
+}
+
+.lista-footer ul{
+  list-style: none; 
+  justify-content: center;
+
+}
+ .lista-footer ul li a{
+  text-decoration: none;
+  color: #F2D8C2;
+  justify-content: center;
+
+ }
+
+.lista-footer ul li a:hover{
+  cursor: pointer;
+  color: #4F6F8C;
+}
+.copyright {
+  border-top: 2px solid #735340;
+  text-align: center;
+}
+
+
+/*Estilos de las medias queries*/
+/*@media (min-width: 768px){
+  .header{ 
+  display: flex;
+  justify-content: space-between}
+  .conteneder-cards{
+  grid-template-columns: repeat(2,1fr);
+  padding: 24px;
+  gap: 20px;}
+}*/
+
+@media (max-width: 768px) {
+  nav ul{
+    text-align: center;
+  }
+
+  nav a{
+    display: block;
+    padding: 8px 0;
+  }
+}
