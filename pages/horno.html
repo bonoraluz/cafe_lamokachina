@@ -15,13 +15,13 @@
 
 <body>
     <header>
-        <h1 class="maintitle">Cafetería </h1>
         <h1 class="maintitle">La Mokachina</h1>
-        <h2 class="secondtitle">café y coworking</h2>
-        <p class="eslogan">Somos pet friendly!</p>
+        <h2 class="secondtitle">Café y coworking</h2>
         <div class="icono_moka">
             <img src="../img/moka.jpg" alt="Moka">
         </div>
+        <p class="eslogan">Trabajá, disfrutá un buen café
+        y vení con tu mejor amigo</p>
         
 
         <nav class="navbar">
@@ -29,8 +29,8 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./promos.html">PROMOS</a></li>
                 <li><a href="./cafeteria.html">Cafetería</a></li>
-                <li><a href="">De nuestro horno</a></li>
-                <li><a href="./mascota.html">Para tu mascota</a></li>
+                <li><a class="activo" href="">De nuestro horno</a></li>
+                <li><a href="./mascota.html">Especial mascotas</a></li>
 
             </ul>   
           
@@ -41,34 +41,222 @@
 
 
     <main>
-        <section class="contenedor-cards">
-            <h2>~ De nuestro horno ~</h2>
-            
-            <h3>Porciones de torta</h3>
-            <div class="cards">
-                <img src="../img/cheesecake.jpg" alt="Cheesecake">
-                <img src="../img/chocotorta.jpg" alt="Chocotorta">
-                <img src="../img/lemon_pie.jpg" alt="Lemon pie">
-                <img src="../img/torta_queso.jpg" alt="Torta queso">
-            </div>
-            <p>
-            biribiri
-            </p>
+        <section class="titulo-menu">
+            <h2>~ Delicias de nuestro horno ~</h2>
+        </section> 
 
-            <h3>Clásicos de siempre</h3>
-            <div class="cards">
-                <img src="../img/alfajor_maicena.jpg" alt="alfajor de maicena"> 
-                <img src="../img/Medialunas.jpg" alt="medialunas">
+        <h3 class="categoria">Porciones de torta</h3>
+
+        <section class="contenedor-cards">
+
+            <article class="card">
+                <img src="../img/cheesecake.jpg" alt="Cheesecake">
+
+                <div class="info">
+                    <h3>Cheesecake</h3>
+
+                    <p>
+                        Clásico cheesecake con frutos rojos.
+                    </p>
+
+                    <span class="precio">$5.200</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/chocotorta.jpg" alt="Chocotorta">
+
+                <div class="info">
+                    <h3>Chocotorta</h3>
+
+                    <p>
+                        La favorita de siempre, con dulce de leche y queso crema.
+                    </p>
+
+                    <span class="precio">$4.800</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/lemon_pie.jpg" alt="Lemon Pie">
+
+                <div class="info">
+                    <h3>Lemon Pie</h3>
+
+                    <p>
+                        Base crocante, crema de limón y merengue italiano.
+                    </p>
+
+                    <span class="precio">$4.900</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/torta_queso.jpg" alt="Torta de queso">
+
+                <div class="info">
+                    <h3>Torta de queso</h3>
+
+                    <p>
+                        Bizcochuelo suave con relleno de queso crema.
+                    </p>
+
+                    <span class="precio">$5.000</span>
+                </div>
+            </article>
+
+
+            <h3 class="categoria">Clásicos de siempre</h3>
+            <article class="card">
+                <img src="../img/alfajor_maicena.jpg" alt="Alfajor de maicena">
+
+                <div class="info">
+                    <h3>Alfajor de maicena</h3>
+
+                    <p>
+                        Relleno de dulce de leche y coco rallado.
+                    </p>
+
+                    <span class="precio">$2.000</span>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <img src="../img/Medialunas.jpg" alt="Medialunas">
+
+                <div class="info">
+                    <h3>Medialunas</h3>
+
+                    <p>
+                        De manteca o grasa, recién horneadas.
+                    </p>
+
+                    <span class="precio">$2.000</span>
+                </div>
+            </article>
+
+            <article class="card">
                 <img src="../img/tortitas.jpg" alt="Tortitas">
+
+                <div class="info">
+                    <h3>Tortitas</h3>
+
+                    <p>
+                        Caseras, ideales para acompañar el café.
+                    </p>
+
+                    <span class="precio">$1.800</span>
+                </div>
+            </article>
+
+            <article class="card">
                 <img src="../img/tostadas.jpg" alt="Tostadas">
-                <img src="../img/croissant.jpg" alt="">
-                <img src="../img/Avocado_toast.jpg" alt="">
-            </div>
+
+                <div class="info">
+                    <h3>Tostadas</h3>
+
+                    <p>
+                        Con manteca, mermelada o queso crema.
+                    </p>
+
+                    <span class="precio">$8.500</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/croissant.jpg" alt="Croissant">
+
+                <div class="info">
+                    <h3>Croissant</h3>
+
+                    <p>
+                        Hojaldre artesanal, crocante por fuera y suave por dentro.
+                    </p>
+
+                    <span class="precio">$4.800</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/Avocado_toast.jpg" alt="Avocado Toast">
+
+                <div class="info">
+                    <h3>Avocado Toast</h3>
+
+                    <p>
+                        Pan de masa madre con palta fresca y semillas.
+                    </p>
+
+                    <span class="precio">$15.500</span>
+                </div>
+            </article>
+            <h3 class="categoria">Especiales sin tacc</h3>
+            <article class="card">
+                <img src="../img/stacc_brownie.jpg" alt="Brownie sin tacc">
+
+                <div class="info">
+                    <h3>Porción de brownie</h3>
+
+                    <p>
+                        Relleno con nueces.
+                    </p>
+
+                    <span class="precio">$3.000</span>
+                </div>
+            </article>
+            <article class="card">
+                <img src="../img/stacc_galletas.jpg" alt="Galletas sin tacc">
+
+                <div class="info">
+                    <h3>Galletas</h3>
+
+                    <p>
+                        De maicena y limón.
+                    </p>
+
+                    <span class="precio">$3.000</span>
+                </div>
+            </article>
+            <article class="card">
+                <img src="../img/stacc_budinlimon.jpg" alt="Budín sin tacc">
+
+                <div class="info">
+                    <h3>Porción de budín</h3>
+
+                    <p>
+                        Especial de limón.
+                    </p>
+
+                    <span class="precio">$3.000</span>
+                </div>
+            </article>
+            <article class="card">
+                <img src="../img/stacc_carrot.jpg" alt="Carrot cake sin tacc">
+
+                <div class="info">
+                    <h3>Porción de Carrot Cake</h3>
+
+                    <p>
+                        Con glasé.
+                    </p>
+
+                    <span class="precio">$3.000</span>
+                </div>
+            </article>
+
+
+
+
+
+        </section>
 
 
         
         <div class="wsp">
-            <img src="../img/wsp.png" alt="Ícono wsp">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="../img/wsp.png" alt="Ícono wsp">
+            </a>
         </div>
 
 
@@ -79,11 +267,20 @@
     <footer class="footer">
         <div class="contenedor-footer">
             <div class="lista-footer">
+                <h4>Nuestras sucursales</h4>
+                <ul>
+                    <li>Godoy Cruz</li>
+                    <li>Centro</li>
+                    <li>Chacras</li>
+
+                </ul>
+
+            </div>
+            <div class="lista-footer">
                 <h4>Redes sociales</h4>
                 <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>X</li>
+                    <li><a href="https://www.instagram.com/"target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/"target="_blank">Facebook</a></li>
                 </ul>
     
             </div>
@@ -100,6 +297,8 @@
             </div>
         </div>
         <div class="copyright">
+            <p>📞(261)-55555 </p>
+            <p>✉ la_mokachina_cafe@gmail.com</p>
             <p>· © 2026 Luz Bonora ·</p>
         </div>
     </footer>

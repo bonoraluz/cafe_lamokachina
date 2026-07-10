@@ -14,22 +14,22 @@
 </head>
 <body>
     <header>
-        <h1 class="maintitle">Cafetería </h1>
         <h1 class="maintitle">La Mokachina</h1>
-        <h2 class="secondtitle">café y coworking</h2>
-        <p class="eslogan">Somos pet friendly!</p>
+        <h2 class="secondtitle">Café y coworking</h2>
         <div class="icono_moka">
             <img src="../img/moka.jpg" alt="Moka">
         </div>
+        <p class="eslogan">Trabajá, disfrutá un buen café
+        y vení con tu mejor amigo</p>
         
 
         <nav class="navbar">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./promos.html">PROMOS</a></li>
-                <li><a href="">Cafetería</a></li>
+                <li><a class="activo">Cafetería</a></li>
                 <li><a href="./horno.html">De nuestro horno</a></li>
-                <li><a href="./mascota.html">Para tu mascota</a></li>
+                <li><a href="./mascota.html">Especial mascotas</a></li>
 
             </ul>   
           
@@ -40,52 +40,98 @@
 
 
     <main>
+        <section class="titulo-menu">
+            <h2>☕ Cafetería</h2>
+        </section>
+
         <section class="contenedor-cards">
-            <h2>CAFETERÍA</h2>
-            
-            <h3>Bebidas calientes</h3>
-            <div class="cards">
-                <img src="../img/café.jpg" alt="">
 
 
+            <article class="card">
+                <img src="../img/cafe.jpg" alt="Taza con café">
 
-            </div>
-            <p>
-            Americano, Expresso, Ristretto, Café con leche, Flat white
-            </p>
-            
-            <h3>Cafés fríos</h3> 
-            <div class="cards">
+                <div class="info">
+                    <h3>Cafés clásicos</h3>
 
-                <img src="../img/Cafe_frio.jpg" alt="Café frío">
+                    <p>
+                        Americano • Espresso • Ristretto • Café con leche • Flat White
+                    </p>
+
+                    <span class="precio">$2.500</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/cafe_frio.jpg" alt="Café frío">
+
+                <div class="info">
+                    <h3>Cafés fríos</h3>
+
+                    <p>
+                        Iced Latte • Iced Mocha • Iced Flat White
+                    </p>
+
+                    <span class="precio">$3.500</span>
+                </div>
+            </article>
+
+            <article class="card">
                 <img src="../img/frappe.jpg" alt="Frappé">
+
+                <div class="info">
+                    <h3>Frappé</h3>
+
+                    <span class="precio">$3.500</span>
+                </div>
+            </article>
+            <article class="card">
                 <img src="../img/affogato.jpg" alt="Affogato">
-                <p>Iced latte, Iced Moccha, Iced Flatwhite</p>
-            </div>
 
-            <h3>Licuados y smoothies</h3>
-            <div class="cards">
+                <div class="info">
+                    <h3>Affogato</h3>
 
-                <img src="../img/Licuados y smoothies.jpg" alt="">
-                <p>Banana, Ananá, Durazno, Frutilla, Frutos Rojos</p>
+                    <span class="precio">$4.500</span>
+                </div>
+            </article>
+            
+
+
+            <article class="card"> 
+                <img src="../img/licuado-smoothie.jpg" alt="Licuados y smoothies">
+            
+            <div class="info">
+                <h3>Licuados y smoothies</h3>
+
+                
+                <p>Banana • Ananá • Durazno • Frutilla • Frutos Rojos</p>
                 <p>+ Leche o agua</p>
-
+                <span class="precio">$5.000</span>
+                
             </div>
-           
-            <h3>Infusiones</h3>
-            <div class="cards">
+           </article>
 
+           <article class="card"> 
+                <img src="../img/te.jpg" alt="Taza con infusión">
+             <div class="info">
+                <h3>Infusiones</h3>
+                
                 <p>Earl Grey, Manzanilla, Oolong oriental, Frutos rojos, Explosión cítrica</p>
+               <span class="precio">$3.000</span>
             </div>
+            </article>
 
-            <h3>Mates</h3>
-            <div class="cards">
 
+            <article class="card">
                 <img src="../img/mate.jpeg" alt=""> 
-                <p>
-                    Rosa Monte,Canarias, Playadito, Verde Flor, Cbsé 
-                </p>
-            </div>
+                <div class="info">
+                    
+                    <h3>Mates</h3>
+                
+                    <p>Rosa Monte,Canarias, Playadito, Verde Flor, Cbsé</p>
+                    <p>¡Podés recargar tu termo cuantas veces quieras!</p>
+                    <span class="precio">$3.000</span>
+                 </div>
+            </article>
         
 
         
@@ -95,7 +141,9 @@
 
         
         <div class="wsp">
-            <img src="../img/wsp.png" alt="Ícono wsp">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="../img/wsp.png" alt="Ícono wsp">
+            </a>
         </div>
 
     </main>
@@ -104,11 +152,20 @@
     <footer class="footer">
         <div class="contenedor-footer">
             <div class="lista-footer">
+                <h4>Nuestras sucursales</h4>
+                <ul>
+                    <li>Godoy Cruz</li>
+                    <li>Centro</li>
+                    <li>Chacras</li>
+
+                </ul>
+
+            </div>
+            <div class="lista-footer">
                 <h4>Redes sociales</h4>
                 <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>X</li>
+                    <li><a href="https://www.instagram.com/"target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/"target="_blank">Facebook</a></li>
                 </ul>
     
             </div>
@@ -125,6 +182,8 @@
             </div>
         </div>
         <div class="copyright">
+            <p>📞(261)-55555 </p>
+            <p>✉ la_mokachina_cafe@gmail.com</p>
             <p>· © 2026 Luz Bonora ·</p>
         </div>
     </footer>
