@@ -242,7 +242,7 @@ h1 {
 .card img {
   width: 100%;
   display: block;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
   transition: transform 0.4s;
 }
