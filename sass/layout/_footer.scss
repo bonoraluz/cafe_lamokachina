@@ -7,7 +7,7 @@ footer {
     color: $color-body;
 
     .contenedor-footer {
-        @include flex(column, flex-start, center);
+        @include flex(column, center, center);
         border-top: 2px solid $color-border-tipico;
         gap: $espacio-xl;
 

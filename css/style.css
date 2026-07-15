@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*RESET*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 /*VARIABLES*/
 /* Tipografías */
 /* Colores */
@@ -16,6 +9,13 @@
 /* Transiciones */
 /* Sombras */
 /* Breakpoints */
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #2C3340;
@@ -167,9 +167,10 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  justify-content: space-around;
   padding: 20px;
   border-radius: 25px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -241,7 +242,7 @@ h1 {
 .card img {
   width: 100%;
   display: block;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   transition: transform 0.4s;
 }
@@ -250,17 +251,17 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Cards de la página mascota */
 .card-moka {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   background: #D9B391;
   border-radius: 20px;
+  margin: 20px;
   overflow: hidden;
-  transition: transform 0.4s;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s;
 }
 
 .card-moka:hover {
@@ -277,7 +278,7 @@ h1 {
 }
 
 .card-moka:hover img {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 /*---CARRUSEL---*/
@@ -299,11 +300,11 @@ h1 {
 }
 .carousel-item img {
   display: block;
-  max-width: 70vh;
-  max-height: 70vh;
+  max-width: 50vh;
+  max-height: 50vh;
   border-radius: 25px;
   padding: 10px;
-  border-color: #735340;
+  border: 2px solid #735340;
 }
 
 .ajustar-imagen {
@@ -372,7 +373,7 @@ footer {
 footer .contenedor-footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border-top: 2px solid #735340;
   gap: 25px;
@@ -427,24 +428,32 @@ footer .copyright {
 }
 /*Escritorio*/
 @media (min-width: 1024px) {
+  .icono_moka img {
+    width: 220px;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .contenedor-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-moka img {
+    width: auto;
+    display: block;
+    height: auto;
+    border-radius: 25px;
+  }
   footer .contenedor-footer {
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
   }
   footer .lista-footer {
     flex: 1;
-    text-align: center;
-  }
-  footer .lista-footer h4 {
-    margin-bottom: 10px;
   }
   footer .lista-footer ul {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     gap: 6px;
   }
 }

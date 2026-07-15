@@ -21,9 +21,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: $espacio-lg;
+    justify-content: space-around;
     padding: $espacio-lg;
     border-radius: $radio-xl;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -106,27 +107,28 @@
 
 
 .card-moka {
-   @include flex(column, flex-start, stretch);
+   @include flex(column, center, center);
     background: $color-bg-cards;
     border-radius: $radio-lg; 
-
+    margin: 20px;
 
     overflow: hidden;
     box-shadow: $sombra-card;
 
-    @include transicion(transform);
+    @include transicion(transform, $transicion-normal);
 } 
 .card-moka:hover { 
     transform: translateY(-5px); 
     box-shadow: $sombra-card-hover; 
 } 
 .card-moka img {
-     width: 50%; 
-     display: block; 
-     height: auto; 
-     object-fit: cover; 
-     transition: transform $transicion-normal; 
-    } 
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+
+    @include transicion(transform, $transicion-normal);
+}
 .card-moka:hover img { transform: scale(1.00); }
 
 
@@ -154,11 +156,11 @@
 
     img {
         display: block;
-        max-width: 70vh;
-        max-height: 70vh;
+        max-width: 50vh;
+        max-height: 50vh;
         border-radius: $radio-xl;
         padding: $espacio-sm;
-        border-color: $color-border-tipico;
+        border:2px solid $color-border-tipico;
     }
 }
 

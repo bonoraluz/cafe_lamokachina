@@ -30,7 +30,7 @@
 }
 
 /*Escritorio*/
-@media (min-width: $bp-desktop) {
+@media (min-width: 1024px) {
 
     .icono_moka img {
         width: $logo-desktop;
@@ -40,14 +40,20 @@
         font-size: $titulo-xl;
     }
 
-    .contenedor-cards {
-        grid-template-columns: repeat(auto-fit, minmax($card-min-width, 1fr));
+    .contenedor-cards{
+        grid-template-columns: repeat(3, 1fr);
     }
 
-
+    .card-moka img {
+    width: auto;
+    display: block;
+    height: auto;
+    border-radius: $radio-xl;
+    }
     footer {
 
         .contenedor-footer {
+            flex-direction: row;
             justify-content: space-evenly;
             align-items: flex-start;
         }
