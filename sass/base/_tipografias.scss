@@ -1,0 +1,51 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixings' as *;
+
+
+
+body {
+    font-family: $font-general;
+    background-color: $color-bg-general;
+    color: $color-body;
+    overflow-x: hidden;
+}
+
+
+main h2 {
+    text-align: center;
+    margin-top: $espacio-sm;
+
+}
+
+.activo {
+    color: $color-hero;
+    border-bottom: 2px solid $color-hero;
+}
+
+
+.titulo-menu {
+    text-align: center;
+    margin: 50px 0;
+    border-bottom: 2px solid $color-border-tipico;
+}
+
+.titulo-menu h2 {
+    font-size: 1.3rem;
+    color: $color-body;
+
+}
+
+.info h3 {
+
+    color: $color-info-h3;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.info p {
+    background: none;
+    text-align: center;
+    color: #735340;
+    font-size: 1rem;
+    line-height: 1.6;
+}

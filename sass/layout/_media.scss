@@ -1,0 +1,65 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixings' as *;
+
+
+/* Tablet */
+@media (min-width: $bp-tablet) {
+
+    .icono_moka img {
+        width: $logo-tablet;
+    }
+
+    .navbar {
+        ul {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    .contenedor-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-footer {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: $titulo-lg;
+    }
+}
+
+/*Escritorio*/
+@media (min-width: $bp-desktop) {
+
+    .icono_moka img {
+        width: $logo-desktop;
+    }
+
+    h1 {
+        font-size: $titulo-xl;
+    }
+
+    .contenedor-cards {
+        grid-template-columns: repeat(auto-fit, minmax($card-min-width, 1fr));
+    }
+
+
+    footer {
+
+        .contenedor-footer {
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .lista-footer {
+            flex: 1;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+    }
+}

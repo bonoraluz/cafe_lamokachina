@@ -1,0 +1,71 @@
+/*VARIABLES*/
+
+
+/* Tipografías */
+$font-general: "Inter", sans-serif;
+$font-titulo: "DM Serif Display", serif;
+
+/* Colores */
+$color-bg-general: #2C3340;
+$color-bg-navbar: #4F6F8C;
+$color-bg-cards: #D9B391;
+$color-bg-precio: #735340;
+$color-bg-form: #F2D8C2;
+
+$color-body: #F2D8C2;
+$color-hero: #D9B391;
+$color-info-h3: #2C3340;
+$color-info-p: #735340;
+$color-texto-form: #2C3340;
+$color-formulario-reserva: #4F6F8C;
+$color-hover-footer: #4F6F8C;
+$color-border-tipico: #735340;
+$color-border-formulario: #D9B391;
+
+$color-shadow: rgba(79, 111, 140, .25);
+
+/* Espaciados */
+$espacio-xs: 5px;
+$espacio-sm: 10px;
+$espacio-md: 15px;
+$espacio-lg: 20px;
+$espacio-xl: 25px;
+$espacio-xxl: 50px;
+$icono-wsp: 60px;
+
+/* Bordes */
+$radio-sm: 8px;
+$radio-md: 12px;
+$radio-lg: 20px;
+$radio-xl: 25px;
+$radio-circulo: 50%;
+
+/* Tipografía */
+$texto-sm: 1rem;
+$texto-md: 1.3rem;
+$texto-lg: 2rem;
+
+$titulo-md: 2.5rem;
+$titulo-lg: 2.8rem;
+$titulo-xl: 3.5rem;
+
+/* Tamaños */
+$logo-mobile: 140px;
+$logo-tablet: 180px;
+$logo-desktop: 220px;
+
+$alto-img-card: 150px;
+$card-min-width: 250px;
+
+/* Transiciones */
+$transicion-rapida: .25s;
+$transicion-normal: .4s;
+$transicion-lenta: .8s;
+
+/* Sombras */
+$sombra-card: 0 10px 20px rgba(0, 0, 0, .2);
+$sombra-card-hover: 0 20px 30px rgba(0, 0, 0, .3);
+
+/* Breakpoints */
+$bp-tablet: 768px;
+$bp-desktop: 1024px;

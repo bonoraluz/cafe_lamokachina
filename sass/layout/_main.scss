@@ -1,0 +1,176 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixings' as *;
+
+
+
+/*MAIN*/
+
+
+
+.contenedor-somos {
+    margin-top: $espacio-sm;
+    border-bottom: 2px solid $color-border-tipico;
+    text-align: center;
+}
+
+
+
+/*-----CARDS------*/
+
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $espacio-lg;
+    padding: $espacio-lg;
+    border-radius: $radio-xl;
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor-cards h2 {
+    color: $color-body;
+    text-align: center;
+    gap: $espacio-sm;
+    padding: $espacio-sm;
+    font-size: $titulo-md;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.contenedor-cards h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin: 12px auto;
+    background: $color-bg-cards;
+    border-radius: 5px;
+}
+
+.categoria {
+    grid-column: 1 / -1;
+    margin: 2rem auto 1rem;
+    color: $color-bg-cards;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info {
+    @include flex(column, flex-start, stretch);
+    padding: $espacio-lg;
+    gap: $espacio-md;
+}
+.precio {
+    margin-top: auto;
+    align-self: flex-end;
+
+    background: $color-bg-precio;
+    color: $color-body;
+
+    padding: 8px 18px;
+    border-radius: $radio-lg;
+
+    font-size: $texto-sm;
+    font-weight: bold;
+}
+
+.card {
+    @include flex(column, flex-start, stretch);
+
+    background: $color-bg-cards;
+    border-radius: $radio-lg;
+    overflow: hidden;
+
+    @include transicion(transform, $transicion-normal);
+
+    box-shadow: $sombra-card;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: $sombra-card-hover;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    height: $alto-img-card;
+    object-fit: cover;
+
+    @include transicion(transform, $transicion-normal);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+.card-moka {
+   @include flex(column, flex-start, stretch);
+    background: $color-bg-cards;
+    border-radius: $radio-lg; 
+
+
+    overflow: hidden;
+    box-shadow: $sombra-card;
+
+    @include transicion(transform);
+} 
+.card-moka:hover { 
+    transform: translateY(-5px); 
+    box-shadow: $sombra-card-hover; 
+} 
+.card-moka img {
+     width: 50%; 
+     display: block; 
+     height: auto; 
+     object-fit: cover; 
+     transition: transform $transicion-normal; 
+    } 
+.card-moka:hover img { transform: scale(1.00); }
+
+
+
+
+
+/*---CARRUSEL---*/
+.contenedor-sucursales {
+    border-bottom: 2px solid $color-border-tipico;
+
+    p {
+        text-align: center;
+    }
+}
+
+/*---Sucursales Estilos carrusel---*/
+.carousel-item {
+    justify-items: center;
+
+    h5 {
+        color: $color-body;
+        font-weight: 1000;
+        background-color: $color-bg-general;
+    }
+
+    img {
+        display: block;
+        max-width: 70vh;
+        max-height: 70vh;
+        border-radius: $radio-xl;
+        padding: $espacio-sm;
+        border-color: $color-border-tipico;
+    }
+}
+
+.ajustar-imagen {
+    height: 50vh;
+    object-fit: cover;
+}
+
+/*---FORMULARIO RESERVAS---*/
+.contenedor-reservas {
+    margin-top: 10px;
+    margin-inline: 10px;
+    justify-content: space-between;
+
+}

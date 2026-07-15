@@ -1,0 +1,56 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixings' as *;
+
+
+form {
+    background-color: $color-bg-cards;
+    padding: 2rem;
+    border-radius: $radio-md;
+    color: $color-formulario-reserva;
+    font-weight: 700;
+}
+
+.form-control,
+.form-select,
+.form-sucursal {
+    background-color: $color-bg-form;
+    border: 2px solid $color-border-formulario;
+    color: $color-bg-general;
+}
+
+.form-control,
+.form-select,
+.form-sucursal:focus {
+    background-color: $color-bg-form;
+    border-color: $color-formulario-reserva;
+    color: $color-texto-form;
+    box-shadow: 0 0 0 .2rem $color-shadow;
+}
+
+.form-control,
+.form-select,
+.form-select::placeholder {
+    color: $color-border-tipico;
+    opacity: .7;
+}
+
+.boton-formulario {
+
+    background: $color-bg-form;
+    color: $color-texto-form;
+    border: 2px solid $color-texto-form;
+    border-radius: $radio-sm;
+    font-family: $font-general;
+    transition: $transicion-normal;
+}
+
+.boton-formulario:hover {
+    background: $color-texto-form;
+    color: $color-body;
+}
+
+
+
+
+
+

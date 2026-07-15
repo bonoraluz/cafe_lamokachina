@@ -1,0 +1,48 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixings' as *;
+/*---FOOTER-----*/
+
+footer {
+    background-color: $color-bg-general;
+    color: $color-body;
+
+    .contenedor-footer {
+        @include flex(column, flex-start, center);
+        border-top: 2px solid $color-border-tipico;
+        gap: $espacio-xl;
+
+        .lista-footer {
+            @include flex(column, flex-start, center);
+            text-align: center;
+            gap: 4px;
+
+            h4 {
+                margin-bottom: $espacio-sm;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+
+                    a {
+                        color: $color-body;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $color-hover-footer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        border-top: 2px solid $color-border-tipico;
+        text-align: center;
+    }
+}

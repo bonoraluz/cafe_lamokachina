@@ -1,0 +1,112 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixings' as *;
+
+header {
+    background: $color-bg-general;
+    @include flex(column, center, center);
+    text-align: center;
+    padding: $espacio-sm;
+    gap: $espacio-sm;
+
+    .icono_moka {
+        img {
+            width: $logo-mobile;
+            border-radius: $radio-circulo;
+            @include transicion(transform, $transicion-lenta);
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+
+h1 {
+    @include titulo($texto-lg, $color-body);
+
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: $espacio-sm;
+}
+
+.secondtitle {
+    @include titulo($texto-md, $color-hero);
+
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: $espacio-sm;
+}
+
+.eslogan {
+    font-family: $font-general;
+    font-size: $texto-sm;
+    padding-inline: $espacio-md;
+    margin-top: $espacio-sm;
+    font-weight: 100;
+    color: $color-hero;
+    letter-spacing: 2px;
+
+
+}
+
+/*---NAV BAR---*/
+
+.navbar {
+    background-color: $color-bg-navbar;
+    width: 100%;
+    font-family: $font-titulo;
+    position: sticky;
+    border: 2px solid $color-border-tipico;
+    margin-top: $espacio-sm;
+    padding: $espacio-md;
+    border-radius: $radio-lg;
+
+    ul {
+        @include flex(column, center, center);
+        list-style: none;
+        width: 100%;
+        gap: $espacio-sm;
+        padding: 0;
+        margin: 0;
+
+        li {
+
+            a {
+                color: $color-body;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-hero;
+                    @include transicion(color, $transicion-rapida);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.wsp {
+
+    img {
+        position: fixed;
+        right: $espacio-sm;
+        bottom: $espacio-sm;
+        width: $icono-wsp;
+        height: auto;
+        border-radius: $radio-circulo;
+
+        @include transicion(transform, $transicion-normal);
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+/* FIN HEADER*/
